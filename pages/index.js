@@ -4,6 +4,7 @@ import Feed from "../components/Feed";
 import Header from "../components/Header";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
+import Widgets from "../components/Widgets";
 import { db } from "../firebase";
 
 export default function Home({ session, posts }) {
@@ -22,6 +23,7 @@ export default function Home({ session, posts }) {
         {/* Feed */}
         <Feed posts={posts} />
         {/* Widgets */}
+        <Widgets />
       </main>
     </div>
   );
